@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+@keyframes photoshow
+{
+0%{background-image:url(image/1.jpg);opacity:0}
+10%{background-image:url(image/2.jpg);opacity:0.5}
+20%{background-image:url(image/3.jpg);opacity:0.7}
+100%{background-image:url(image/4.jpg);opacity:1.5}
+}
+@keyframes movep
+{
+	0%{backgroung-position:0% 0%}
+	100%{backgroung-position:300% 0%}
+}
+#img1{width:400px;height:300px;
+animation:photoshow 20s infinite;
+background-repeat:no-repeat}
+
+#img2{width:400px;height:300px;
+animation:photoshow 20s 1;
+background-image:url(image/1.jpg)
+background-repeat:no-repeat}
+</style>
+</head>
+<body><div id=img1></div>
+<body><div id=img2></div>
